@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Let's Get in Touch</h2>
+    <p>Have a question or want to talk about a project? Use the form below.</p>
+    <form action="#" method="get" onsubmit="event.preventDefault(); document.getElementById('form-message').textContent='Thanks! This sample form is for demonstration and does not send messages yet.';">
+      <label for="name">Your name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <button class="button" type="submit">Send Message</button>
+      <p id="form-message" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer><p>&copy; 2026 My Portfolio Website</p></footer>
+</body>
+</html>
